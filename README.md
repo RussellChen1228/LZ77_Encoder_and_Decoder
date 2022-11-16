@@ -11,7 +11,7 @@ The cycle in the testbench is set as 30 ns.
 ## Application
 
 **Decoder**
-<hr>
+
 1.	Assign encode = 0
 2.	Set the set signal = 1
   - If set = 1 => tmp_len = code_len
@@ -21,8 +21,9 @@ The cycle in the testbench is set as 30 ns.
 5.  tmp_len = tmp_len – 1
 6.  Repeat the from step2 to step4 until chardata = 8’h24 && tmp_len = 0
 7.  finish=1
-<hr>
+
 **Encoder**
+
 - Input state: (finish = 0, valid = 0)
   - finish = 0, valid = 0
   - char buffer = {char buffer, chardata}
